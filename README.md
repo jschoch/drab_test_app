@@ -9,8 +9,11 @@
 you likely want to change the salts and security tokens if you plan on using this as a base for something else
 
 `mix deps.get`
+
 `npm install`
+
 `./node_modules/brunch/bin/brunch build`
+
 `iex -S mix phoenix.server`
 
 
