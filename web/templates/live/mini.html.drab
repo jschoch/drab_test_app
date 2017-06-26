@@ -1,0 +1,38 @@
+<div id="begin"></div>
+<div id="drab_pid"></div>
+
+<script innocent=true>
+  // nothing
+</script>
+
+<span id=before_script></span>
+
+<script type="text/javascript">
+  console.log('class1 = ' + '<%=@class1%>')
+  console.log('class2 = <%=@class2%>')
+  if (<%= @hidden %>) {console.log("HIDDEN = true")}
+</script>
+
+<button></button>
+
+<%= raw "<button></button>" %> 
+
+<button drab-click=update_mini class="begin <%=@class1%> <%=@class2%> rest"  class1=<%=@class1%>>
+  Clickme <%=@class1%> <%=@class2%>
+</button>
+<br><br>
+<button id=b $hidden=<%= @hidden %> $other=<%= @list %>>
+  Other button  
+</button>
+
+<span id=before_label></span>
+
+    <p>
+      <h2><span class="label label-<%= @label %>">Label: <%= @label %></span></h2>
+    </p>
+
+<p p=p>
+  <b b=b>
+    Class2: <%=@class2%>
+  </b>
+</p>

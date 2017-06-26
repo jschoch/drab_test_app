@@ -1,0 +1,31 @@
+<div id="begin"></div>
+<div id="drab_pid"></div>
+
+<br>
+Users (<%= @count %>) count: <%= @count %>
+<br>
+<%= render("users.html", users: @users) %>
+
+<br>
+
+<button drab-click="update_both" class="btn btn-primary">
+  Update Both
+</button>
+
+<br>
+
+<button drab-click="update_count" class="btn btn-primary">
+  Update Count
+</button>
+
+<br>
+<button drab-click="update_list" class="btn btn-primary">
+  Update List
+</button>
+
+<br><br>
+
+
+
+<%= "no assigns here" %>
+
